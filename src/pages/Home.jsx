@@ -12,7 +12,7 @@ function Home() {
     <p className="hero-subtitle">
       The minimalist Pomodoro timer built for high-performing minds.
     </p>
-    <a href="/timer" className="hero-btn">Start Timer</a>
+    <Link to="/timer" className="hero-btn">Start Timer</Link>
   </section>
   <svg className="waves" viewBox="0 0 1440 320">
     <path fill="#ffffffaa" fillOpacity="1"
