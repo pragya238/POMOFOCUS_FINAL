@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./timer.css";
+import "./Timer.css";
 import Quote from "../components/Quote";
 
 const modeTimes = {
