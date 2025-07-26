@@ -1,0 +1,125 @@
+.timer-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .mode-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .mode-buttons button {
+    padding: 10px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #e0e0e0;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .mode-buttons button:hover {
+    background-color: #d4d4d4;
+  }
+  
+  .mode-buttons .active-mode {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+  }
+  
+  .time-display {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .control-buttons button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .control-buttons button:hover {
+    background-color: #357ABD;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 480px) {
+    .timer-container {
+      padding: 1.5rem;
+    }
+  
+    .mode-buttons {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  
+    .control-buttons {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .time-display {
+      font-size: 3rem;
+    }
+  }
+  
+
+
+  /* Focus Stats Section */
+.stats-container {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    border-left: 6px solid #ff6b6b;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .stats-container:hover {
+    transform: scale(1.02);
+  }
+  
+  .stats-container h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .stats-container p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.4rem 0;
+    line-height: 1.5;
+  }
+  
+  
