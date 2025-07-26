@@ -2,7 +2,7 @@ import React from "react";
 import blogData from "../data/blogData";
 import BlogCard from "../components/BlogCard";
 import { useNavigate } from "react-router-dom";
-import "./blog.css";
+import "./Blog.css";
 
 const Blog = () => {
   const navigate = useNavigate();
