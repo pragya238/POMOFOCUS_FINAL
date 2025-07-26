@@ -6,7 +6,7 @@ const modeTimes = {
   focus: 25 * 60,   
   short: 5 * 60,     
   long: 15 * 60     
-};
+}
 
 const Timer = () => {
     const [mode, setMode] = useState("focus");
@@ -57,6 +57,7 @@ const Timer = () => {
   };
 
   return (
+   
     <div className="timer-container">
       <div className="mode-buttons">
         {["focus", "short", "long"].map((m) => (
@@ -70,8 +71,9 @@ const Timer = () => {
         ))}
       </div>
 
+
     <div className="stats-container">
-    <h3>📊 Focus Stats</h3>
+    <h3>Focus Stats</h3>
     <p>✅ Pomodoros Completed: {completedPomodoros}</p>
     <p>⏱️ Total Focus Time: {totalFocusTime} minutes</p>
     </div>

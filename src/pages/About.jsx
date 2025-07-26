@@ -14,7 +14,7 @@ return (
         while keeping things simple and visually refreshing.
     </p>
     <p className="about-tagline">
-        ✨ Stay focused. Stay balanced. Stay productive.
+        Stay focused. Stay balanced. Stay productive.
     </p>
     </div>
 </section>

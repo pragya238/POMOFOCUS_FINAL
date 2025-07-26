@@ -9,14 +9,18 @@ const Blog = () => {
 
   return (
     <div className="blog-container">
-      <h1>📚 Productivity Blog</h1>
-      {blogData.map((blog) => (
-        <BlogCard
-          key={blog.id}
-          blog={blog}
-          onClick={() => navigate(`/blog/${blog.id}`)}
-        />
-      ))}
+      <div className="overlay">
+        <h1 className="blog-title">Productivity Blog</h1>
+        <div className="blog-grid">
+          {blogData.map((blog) => (
+            <BlogCard
+              key={blog.id}
+              blog={blog}
+              onClick={() => navigate(`/blog/${blog.id}`)}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,125 +1,133 @@
 .timer-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 2rem;
-    background-color: #f9f9f9;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: 'Segoe UI', sans-serif;
-    transition: all 0.3s ease;
-  }
-  
-  .mode-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .mode-buttons button {
-    padding: 10px 18px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 25px;
-    background-color: #e0e0e0;
-    color: #333;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .mode-buttons button:hover {
-    background-color: #d4d4d4;
-  }
-  
-  .mode-buttons .active-mode {
-    background-color: #4a90e2;
-    color: white;
-    font-weight: bold;
-    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
-  }
-  
-  .time-display {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    color: #333;
-  }
-  
-  .control-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-  
-  .control-buttons button {
-    padding: 12px 24px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 25px;
-    background-color: #4a90e2;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-  }
-  
-  .control-buttons button:hover {
-    background-color: #357ABD;
-    transform: scale(1.05);
-  }
-  
-  @media (max-width: 480px) {
-    .timer-container {
-      padding: 1.5rem;
-    }
-  
-    .mode-buttons {
-      flex-direction: column;
-      gap: 0.8rem;
-    }
-  
-    .control-buttons {
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .time-display {
-      font-size: 3rem;
-    }
-  }
-  
+  max-width: 420px;
+  margin: 50px auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #f0f0f0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
 
 
-  /* Focus Stats Section */
+.mode-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.mode-buttons button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  backdrop-filter: blur(6px);
+}
+
+.mode-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mode-buttons .active-mode {
+  background-color: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+}
+
+.time-display {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.control-buttons button {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.3);
+}
+
+.control-buttons button:hover {
+  background-color: #ff4d4d;
+  transform: scale(1.05);
+}
+
 .stats-container {
-    margin: 2rem auto;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 420px;
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-left: 6px solid #ff6b6b;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  color: #f3f3f3;
+  transition: all 0.3s ease-in-out;
+}
+
+.stats-container:hover {
+  transform: scale(1.02);
+}
+
+.stats-container h3 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.stats-container p {
+  font-size: 1rem;
+  color: #dddddd;
+  margin: 0.4rem 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .timer-container {
     padding: 1.5rem;
-    max-width: 400px;
-    background-color: #f9f9f9;
-    border-left: 6px solid #ff6b6b;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    font-family: "Poppins", sans-serif;
-    text-align: left;
-    transition: all 0.3s ease-in-out;
   }
-  
-  .stats-container:hover {
-    transform: scale(1.02);
+
+  .mode-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
   }
-  
-  .stats-container h3 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 0.8rem;
-    font-weight: 600;
+
+  .control-buttons {
+    flex-direction: column;
+    gap: 1rem;
   }
-  
-  .stats-container p {
-    font-size: 1rem;
-    color: #555;
-    margin: 0.4rem 0;
-    line-height: 1.5;
+
+  .time-display {
+    font-size: 3.5rem;
   }
-  
-  
+}
